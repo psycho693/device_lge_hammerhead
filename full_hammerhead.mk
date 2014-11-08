@@ -30,5 +30,11 @@ PRODUCT_MODEL := AOSP on HammerHead
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := true
 
+PRODUCT_BUILD_PROP_OVERRIDES +=
+PRODUCT_NAME :=Nexus 5
+BUILD_FINGERPRINT :=google/hammerhead/hammerhead:5.0/LRX21M/1511060136:user/release-keys 
+PRIVATE_BUILD_DESC :="hammerhead-userdebug 5.0 LRX21M 11060136 release-keys"
+
 $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)
+
