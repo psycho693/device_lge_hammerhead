@@ -200,3 +200,5 @@ system/vendor/lib/libqmi_client_qmux.so:qcom
 system/vendor/lib/libsensor_reg.so:qcom
 system/vendor/lib/libtime_genoff.so:qcom
 system/vendor/lib/libqdi.so:qcom
+system/vendor/lib/librpmb.so:qcom
+system/vendor/lib/libssd.so:qcom
