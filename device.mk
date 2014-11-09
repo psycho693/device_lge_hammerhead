@@ -235,10 +235,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.hammerhead
 
-#unified email
-PRODUCT_PACKAGES += \
-    UnifiedEmail
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
 
