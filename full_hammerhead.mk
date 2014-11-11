@@ -25,8 +25,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_NAME := full_hammerhead
 PRODUCT_DEVICE := hammerhead
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on HammerHead
+PRODUCT_BRAND := google
+PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
@@ -36,4 +36,6 @@ PRIVATE_BUILD_DESC :="hammerhead-userdebug 5.0 LRX21M 11060136 release-keys"
 
 $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)
+$(call inherit-product-if-exists, device/nexus-like_common/common.mk)
+$(call inherit-product-if-exists, device/nexus-like_common/nexusaudio.mk)
 
