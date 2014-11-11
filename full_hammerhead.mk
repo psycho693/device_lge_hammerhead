@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES := device/lge/hammerhead/apns-full-conf.xml:system/etc/apns-c
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := Frankened_Hammerhead
+PRODUCT_NAME := full_hammerhead
 PRODUCT_DEVICE := hammerhead
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 5
@@ -37,6 +37,6 @@ BUILD_DISPLAY=LRX21M-FrankenBunny
 
 $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)
-$(call inherit-product, device/nexus-like_common/common.mk)
-$(call inherit-product, device/nexus-like_common/nexusaudio.mk)
+$(call inherit-product, device/nexus-like/common/common.mk)
+$(call inherit-product, device/nexus-like/common/nexusaudio.mk)
 
